@@ -24,7 +24,7 @@ public class WeaponManager : MonoBehaviour
 
 
 
-    int _currentWeapon = 0;
+    public int _currentWeapon = 0;
 
     private void Update()
     {
