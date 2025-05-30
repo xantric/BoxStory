@@ -8,6 +8,9 @@ public class AttackManager : MonoBehaviour
     Animator _animator;
     [SerializeField]
     WeaponManager _weaponManager;
+    [SerializeField]
+    GameObject _weaponHolder;
+    HitBox _hitBox; // Assuming HitBox is a component that handles hit detection
     float Speed;
     void Start()
     {
@@ -31,6 +34,14 @@ public class AttackManager : MonoBehaviour
                 GetComponent<PlayerStateMachine>()._speed = 0; // Stop player movement during attack animation
             }
         }
+        if (_hitBox != null)
+        {
+            _hitBox.isAttacking = _animator.GetCurrentAnimatorStateInfo(0).IsName("Attack");
+        }
+        else
+        {
+            Debug.LogWarning("HitBox is not assigned or found.");
+        }
     }
     void Attack()
     {
@@ -39,12 +50,13 @@ public class AttackManager : MonoBehaviour
             Debug.LogWarning("No weapon attack damage mapping found.");
             return;
         }
-
+        _hitBox = _weaponHolder.GetComponentInChildren<HitBox>();
         // Assuming the first weapon is the current one
         WeaponAttackDamage currentWeapon = _weaponAttackDamageMapping[_weaponManager._currentWeapon % _weaponAttackDamageMapping.Count];
         if (currentWeapon != null)
         {
             // Perform attack logic here, e.g., apply damage to enemies
+            _hitBox.damage = currentWeapon.damage; // Update hitbox damage based on the current weapon
             Debug.Log($"Attacking with {currentWeapon.weaponID} for {currentWeapon.damage} damage.");
         }
         else
