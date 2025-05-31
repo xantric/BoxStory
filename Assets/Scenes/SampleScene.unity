@@ -1431,7 +1431,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ba84261afbf4798b8e2faf75ffa12e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
   maxHealth: 100
+  _deathEffect: {fileID: 0}
+  _animator: {fileID: 0}
 --- !u!54 &590169545
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1925,7 +1928,7 @@ MonoBehaviour:
     damage: 80
   _animator: {fileID: 1030168234}
   _weaponManager: {fileID: 1448496827}
-  _hitBox: {fileID: 1717901114}
+  _weaponHolder: {fileID: 1448496825}
 --- !u!114 &1030168236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1938,7 +1941,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ba84261afbf4798b8e2faf75ffa12e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
   maxHealth: 100
+  _deathEffect: {fileID: 0}
+  _animator: {fileID: 1030168234}
 --- !u!1001 &1054901527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2544,7 +2550,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ba84261afbf4798b8e2faf75ffa12e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
   maxHealth: 100
+  _deathEffect: {fileID: 0}
+  _animator: {fileID: 0}
 --- !u!54 &1215299252
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2662,7 +2671,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ba84261afbf4798b8e2faf75ffa12e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
   maxHealth: 100
+  _deathEffect: {fileID: 0}
+  _animator: {fileID: 0}
 --- !u!54 &1263961711
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3051,7 +3063,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ba84261afbf4798b8e2faf75ffa12e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
   maxHealth: 100
+  _deathEffect: {fileID: 0}
+  _animator: {fileID: 0}
 --- !u!1 &1365389970
 GameObject:
   m_ObjectHideFlags: 0
@@ -3363,7 +3378,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ba84261afbf4798b8e2faf75ffa12e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
   maxHealth: 100
+  _deathEffect: {fileID: 0}
+  _animator: {fileID: 0}
 --- !u!54 &1423666518
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3531,7 +3549,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ba84261afbf4798b8e2faf75ffa12e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
   maxHealth: 100
+  _deathEffect: {fileID: 0}
+  _animator: {fileID: 0}
 --- !u!54 &1538659317
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4048,18 +4069,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1640383353}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1717901114 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4503734319046160205, guid: 06030ccd8d59f2a4d87385736300facf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1640383353}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56614923bcec448658221be8e1b53501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1904011294
 GameObject:
   m_ObjectHideFlags: 3
