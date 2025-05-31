@@ -58,8 +58,10 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Enemy collided with Player!");
+            
             collision.gameObject.GetComponent<HealthSystem>()?.TakeDamage(damage); // Example damage value
-            Destroy(gameObject);
+            animator.SetTrigger("Death");
+            //Destroy(gameObject);
         }
     }
     private void OnDrawGizmosSelected()
