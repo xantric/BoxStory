@@ -34,6 +34,7 @@ public class AttackManager : MonoBehaviour
                 GetComponent<PlayerStateMachine>()._speed = 0; // Stop player movement during attack animation
             }
         }
+        _hitBox = _weaponHolder.GetComponentInChildren<HitBox>();
         if (_hitBox != null)
         {
             _hitBox.isAttacking = _animator.GetCurrentAnimatorStateInfo(0).IsName("Attack");
