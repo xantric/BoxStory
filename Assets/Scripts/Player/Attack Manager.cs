@@ -18,7 +18,7 @@ public class AttackManager : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) )
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Q))
         {
             Attack();
         }

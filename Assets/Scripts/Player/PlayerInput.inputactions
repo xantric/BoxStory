@@ -102,6 +102,17 @@
                 },
                 {
                     "name": "",
+                    "id": "d7483203-9d22-45fa-8a4f-a91949254001",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "c907a2ee-f162-4627-99b8-195d62ffde02",
                     "path": "<Keyboard>/space",
                     "interactions": "",
